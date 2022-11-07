@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 220px;
+}
+.header__logo {
+  margin: 14px 0;
+  margin-right: 63px;
+}
+.header__link {
+  color: white;
+  margin-left: auto;
+}
+.header__link:hover {
+  color: #fe9013;
+}
+
+.logo {
+  position: relative;
+  display: block;
+  width: 82px;
+}
+.logo__link {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 1px rgb(255, 255, 255) solid;
+}
+.logo__title {
+  font-size: 19.01px;
+  font-weight: 400;
+  line-height: 22.82px;
+  color: rgb(255, 255, 255);
+}
+.logo__img {
+  position: absolute;
+  bottom: 4.79px;
+  left: 11.13px;
+}
+
+.nav__items {
+  display: flex;
+  flex-direction: row;
+  gap: 58px;
+  margin: 0;
+  padding: 0;
+}
+.nav__link {
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 500;
+  color: white;
+}
+.nav__link--activate {
+  color: #fe9013;
+}
+.nav__link:hover {
+  color: #fe9013;
+}
+
+.title-block {
+  background-image: url("../../assets/images/Giant Panda.jpg");
+  background-position: bottom;
+  background-position: 20% 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 12px;
+  padding-bottom: 100px;
+}
+.title-block__wrapper {
+  width: 465px;
+  height: 465px;
+  background-color: #fe9013;
+  border-radius: 50%;
+  margin-left: 807px;
+}
+.title-block__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto-Bold";
+  font-size: 106.5px;
+  line-height: 80%;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding-left: 173px;
+  padding-top: 74px;
+}
+.title-block__title--special {
+  color: #ffee2e;
+  margin: 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 298px;
+  border: none;
+  border-radius: 50px;
+  background-color: #fe9013;
+  margin-left: 983px;
+  margin-top: 86px;
+}
+.btn:hover {
+  background-color: #e47209;
+}
+.btn__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.4px;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+  padding: 16px 0;
+}
+
+.backstage {
+  padding-top: 140px;
+  padding-left: 219px;
+  padding-right: 222px;
+  padding-bottom: 180px;
+  background: url("../../assets/images/flower_foto1.jpg") no-repeat right top 12px/auto 100%;
+}
+.backstage__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 87px;
+}
+.backstage__image {
+  max-width: 609px;
+  max-height: 403px;
+}
+.backstage__title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 57.6px;
+  color: #333b41;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.backstage__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #333b41;
+  margin: 0;
+  margin-top: 54px;
+  margin-bottom: 34px;
+}
+.backstage__text {
+  font-size: 16px;
+  font-family: 400;
+  line-height: 20.8px;
+  color: #333b41;
+}
+
+.pets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 138px;
+  padding-right: 140px;
+  padding-bottom: 100px;
+  background: url("../../assets/images/palm_foto.jpg") no-repeat left 100%, url("../../assets/images/strelitzia 1.jpg") no-repeat right 100%;
+}
+.pets__wrapper {
+  display: flex;
+  align-items: center;
+}
+.pets__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px 30px;
+  max-width: 1188px;
+  margin-bottom: 80px;
+}
+.pets__btn {
+  margin: 0;
+}
+.pets__btn-round {
+  margin: 0;
+  width: 62px;
+  height: 62px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fe9013;
+}
+.pets__btn-round:hover {
+  background-color: #e47209;
+}
+.pets__icon--rotate {
+  transform: rotate(180deg);
+}
+
+.pets-card {
+  border: 1px #fe9013 solid;
+  border-radius: 5px;
+}
+.pets-card__img {
+  min-width: 366px;
+  min-height: 366px;
+}
+.pets-card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+.pets-card__title {
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 22.4px;
+  text-transform: uppercase;
+}
+.pets-card__text {
+  font-size: 15px;
+  font-weight: 300px;
+  line-height: 18px;
+  margin: 0;
+  margin-top: 5px;
+}
